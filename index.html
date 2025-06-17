@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chinmay Kadu | Info Card</title>
+
+  <!-- CSS File -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+  <!-- Dark Mode Toggle -->
+  <div class="theme-toggle">
+    <label class="switch">
+      <input type="checkbox" id="darkModeToggle">
+      <span class="slider round"></span>
+    </label>
+  </div>
+
+  <!-- Info Card -->
+  <div class="container">
+    <div class="card">
+      <div class="header"></div>
+
+      <!-- Profile Image with Coin Flip Animation -->
+      <div class="coin-flip">
+        <div class="profile-image">
+          <img src="./img/pfp.jpg" alt="Profile Picture">
+        </div>
+      </div>
+
+      <!-- Name -->
+      <h1>Chinmay Kadu</h1>
+
+      <!-- Description -->
+      <p class="intro">
+        Hello, I am Chinmay Kadu, I am currently pursuing my bachelors in Information Technology,
+        at Nutan Maharashtra Institute of Engineering and Technology, Pune, India. I love to travel, play cricket and watch series.
+      </p>
+
+      <!-- Social Prompt -->
+      <p class="connect-text">Feel free to reach me out through following links.</p>
+
+      <!-- Social Icons (Replaced Facebook with Mail) -->
+      <div class="social-icons">
+        <a href="https://chinmaykadu19.netlify.app/" target="_blank"><i class="fas fa-globe"></i></a>
+        <a href="https://www.instagram.com/chinmay_kadu_19/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:chinmayrkadu@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a> <!-- Replaced Facebook with Mail -->
+        <a href="https://www.linkedin.com/in/chinmay-kadu-337b41341/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/chinmaykadu19" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+
+      <!-- Resume Button -->
+      <a href="./resume.pdf" download class="resume-btn">Download Resume</a>
+
+      <!-- Footer -->
+      <footer>Made by Chinmay with ♥</footer>
+    </div>
+  </div>
+
+  <!-- Dark Mode Script -->
+  <script>
+    const toggle = document.getElementById('darkModeToggle');
+    toggle.addEventListener('change', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>
